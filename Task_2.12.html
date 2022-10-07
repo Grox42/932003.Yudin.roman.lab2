@@ -11,8 +11,6 @@
 				background: aqua;
 				border: 1px solid forestgreen;
 				display: flex;
-				flex-flow: row wrap;
-				justify-content: space-between;
 			}
 			div.two {
 				background: bisque;
@@ -22,6 +20,17 @@
 			div.tree {
 				width: 75%;
 				background: darkgray;
+			}
+			@media screen and (min-width: 800px) {
+				div.one {
+					flex-direction: row;
+				}
+				
+			}
+			@media screen and (max-width: 800px) {
+				div.one {
+					flex-direction: column;
+				}
 			}
 		</style>
 	</head>
